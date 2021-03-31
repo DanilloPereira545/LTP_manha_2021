@@ -1,0 +1,25 @@
+//Projeto: Exercico 7
+//autor : Danillo Gabriel Pereira Santos.
+//inicio do programa 
+#include <stdio.h>
+int main(void) {
+  //incicio.
+  float entr_r1, entr_r2, entr_r3, entr_r4, saida_req;
+ printf ("calcule a resistência equivalente para um circuito com 4 resistências em série\n");
+  //insira o valor de r1.
+  printf("insira o valor do primeiro resistor\n");
+  scanf( "%f", &entr_r1);
+  //inserir o valor de r2.
+  printf("insira o valor do segundo resistor\n");
+  scanf( "%f", &entr_r2);
+  //inserir o valor de r3.
+  printf("insira o valor do terceiro resistor\n");
+  scanf( "%f", &entr_r3);
+  //inserir o valor de r4.
+  printf("insira o valor do quarto resistor\n");
+  scanf( "%f", &entr_r4);
+  //calcular a  resistencia equivalente.
+  saida_req = entr_r1 + entr_r2 +entr_r3 + entr_r4;
+printf("Resultado: %.2f ohms\n", saida_req);
+  return 0;
+}
