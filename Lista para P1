@@ -1,0 +1,32 @@
+//Projeto: Exercico 1b.
+//autor : Danillo Gabriel Pereira Santos.
+//inicio do programa #include <stdio.h>
+    //inicio do programa 
+   int main(void){
+   int A, B, C;
+printf("Inserir o valor do primeiro numero 1 (A):");
+scanf("%d", &A);
+
+printf("Inserir o valor do segundo numero 2 (B):");
+scanf("%d", &B);
+
+printf("Inserir o valor do terceiro numero 3 (C):");
+scanf("%d", &C);    
+if (A < B)                                                  
+if (B < C)
+ printf("%d %d %d\n", A, B, C);      
+else if (A < C)
+printf("%d %d %d\n", A, C, B);       
+else 
+printf("%d %d %d\n", C, A, B);        
+else                                                   
+if (B < C)                                           
+if (A < C) 
+printf("%d %d %d\n", B, A, C);        
+else 
+printf("%d %d %d\n", B, C, A);    
+else 
+printf("%d %d %d\n", C ,B, A);
+return 0;
+  
+ }
