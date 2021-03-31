@@ -1,0 +1,33 @@
+//Projeto: Exercico 4
+//autor : Danillo Gabriel Pereira Santos.
+//inicio do programa 
+#include <stdio.h>
+int main(void) {
+int e_valor_A, e_valor_B, e_valor_C;
+printf("insir o valor  numero 1 (A):\n");
+  scanf( "%d", &e_valor_A); 
+  printf("insir o valor  numero 2 (B):\n");
+  scanf( "%d", &e_valor_B); 
+  printf("insir o valor  numero 3(C):\n");
+  scanf( "%d", &e_valor_C); 
+   
+  if (e_valor_A > e_valor_B)
+   if (e_valor_B > e_valor_C)
+   printf("%4d%4d%4d\n", e_valor_A, e_valor_B, e_valor_C);
+   else 
+   if (e_valor_A > e_valor_C)
+   printf ("%4d%4d%4d\n", e_valor_A, e_valor_C, e_valor_B);
+   else 
+   printf("%4d%4d%4d\n", e_valor_C, e_valor_A, e_valor_B);
+   else 
+   
+   if (e_valor_B > e_valor_C)
+   if (e_valor_A > e_valor_C)
+   printf("%4d%4d%4d\n",  e_valor_B, e_valor_A, e_valor_C);
+   
+   else 
+   printf ("%4d%4d%4d\n",  e_valor_B, e_valor_C, e_valor_A);
+   else
+   printf ("%4d%4d%4d\n",  e_valor_C, e_valor_B, e_valor_A);
+return 0;
+}
