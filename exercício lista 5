@@ -1,0 +1,24 @@
+//Projeto: Exercico 5
+//autor : Danillo Gabriel Pereira Santos.
+//inicio do programa 
+#include <stdio.h>
+int main(void) {
+  //incicio.
+  float e_altura, peso_idealf, peso_idealm, e_sexo;
+  // ineriro o valor da altura 
+  printf("insira a altura do individuo [M]\n");
+  scanf( "%f", &e_altura);
+  //inserir o sexo do individuo.
+  printf("inseriri o sexo do individuo: N = 1 sexo feminino , N = 0 sexo masculino.");
+  scanf("%f", &e_sexo);
+  // atribuiçoes e resultado 
+  if (e_sexo == 0){
+    peso_idealm = ((72.7 * e_altura) - 58);
+    printf("Peso ideal Masculino: %.2f [KG]\n",peso_idealm );
+  }
+  else if ( e_sexo == 1){
+peso_idealf = ((62.1 * e_altura) - 44.7);
+printf("pesso ideal Feminino: %.2f [KG]\n", peso_idealf );
+  }
+  return 0;
+}
